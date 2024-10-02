@@ -1,206 +1,288 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Kalnia+Glaze:wght@100..700&display=swap" rel="stylesheet">
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Hello My name is Karthik</title>
-    <style>
-        body {
-            margin: 0; 
-            background-color: #f0f0f0; 
-            display: flex; 
-            justify-content: center; 
-            align-items: center; 
-            min-height: 100vh; 
-            flex-direction: column; 
-        }
-
-        header {
-            background: rgba(26, 237, 36, 0.8);
-            color: #fff;
-            padding: 50px;
-            text-align: center;
-            width: 100%; 
-            top: 0; 
-            z-index: 1000; 
-        }
-
-        nav a {
-            margin: 0 15px;
-            color: #fff;
-            text-decoration: none;
-            font-weight: bold;
-            position: relative;
-            transition: color 0.3s;
-        }
-        
-        nav a::after {
-            content: '';
-            position: absolute;
-            left: 0;
-            bottom: -5px;
-            width: 100%;
-            height: 2px;
-            background: #fff;
-            transform: scaleX(0);
-            transition: transform 0.3s;
-        }
-
-        section {
-            padding: 100px; 
-            background: rgba(255, 255, 255, 0.8);
-            margin: 20px auto; 
-            border-radius: 10px;
-            box-shadow: 2px 2px 30px rgba(0, 0, 0, 0.1);
-            width: 80%; 
-            max-width: 1200px; 
-            text-align: center; 
-            position: relative; 
-            padding-bottom: 100px; 
-        }
-
-        h2 {
-            color: #e64a19;
-            margin: 0; 
-        }
-
-        p {
-            color: #424242;
-            margin: 0; 
-        }
-
-        .kalnia-glaze-all {
-            font-family: "Kalnia Glaze", serif;
-            font-weight: 400; 
-        }
-
-        .content {
-            display: flex; 
-            justify-content: center; 
-            align-items: flex-start; 
-            margin-top: 50px; 
-            width: 100%; 
-        }
-
-        img {
-            max-width: 40%; 
-            height: auto; 
-            border-radius: 8px; 
-            margin-right: 20px; 
-        }
-
-        .text-area {
-            max-width: 60%; 
-            text-align: left; 
-        }
-
-        .button-container {
-            display: flex;
-            justify-content: center; /* Centering the buttons */
-            margin-top: 20px; 
-        }
-
-        .download-button, .contact-button {
-            display: inline-block;
-            padding: 15px 30px; /* Increased padding */
-            font-size: 60px; /* Increased font size */
-            margin: 0 10px; 
-            border: 2px solid transparent;
-            border-radius: 5px;
-            font-weight: bold;
-            transition: all 0.3s ease;
-            text-align: center;
-            position: relative;
-            overflow: hidden;
-            color: #fff; 
-            background-color: transparent;
-        }
-
-        .download-button {
-            background-color: #e64a19; 
-        }
-
-        .contact-button {
-            background-color: #42a5f5; 
-        }
-
-        .download-button:hover, .contact-button:hover {
-            color: #000; 
-        }
-
-        .download-button:hover::after, .contact-button:hover::after {
-            transform: translateY(0);
-            background: #fff; 
-            opacity: 1;
-        }
-
-        .download-button::after, .contact-button::after {
-            content: '';
-            position: absolute;
-            top: 50%;
-            left: 50%;
-            width: 100%;
-            height: 100%;
-            background: #fff; 
-            z-index: 0;
-            transition: all 0.3s ease;
-            transform: translate(-50%, -50%) scale(0);
-            border-radius: 5px;
-            opacity: 0.5; 
-        }
-
-        .download-button:hover::after {
-            transform: translate(-50%, -50%) scale(1);
-        }
-
-        .contact-button:hover::after {
-            transform: translate(-50%, -50%) scale(1);
-        }
-
-        .download-button span, .contact-button span {
-            position: relative;
-            z-index: 1; 
-        }
-
-        footer {
-            text-align: center;
-            padding: 20px 0; 
-            position: absolute; 
-            bottom: 10px; 
-            left: 50%; 
-            transform: translateX(-50%); 
-            width: 100%; 
-            margin-top: 100px; 
-        }
-
-    </style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Personal Website</title>
+  <link rel="stylesheet" href="style.css">
 </head>
+<style>
+    body {
+  font-size: larger;
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+.home{
+  color: yellow;
+}
+.con {
+  color: red;
+}
+
+header {
+  background-color: black;
+  color: white;
+  padding: 20px;
+  text-align: center;
+  font-size: 30px;
+}
+
+.heading{
+  background-color: green;
+  color: white;
+  text-align: center;
+  font-size: 50px;
+  padding: 20px 0px;
+}
+
+nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+nav ul li {
+  display: inline-block;
+  margin-right: 10px;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: white;
+}
+
+main {
+  font-size: larger;
+  text-align: center;
+  padding: 20px;
+}
+
+.about{
+display: flex;
+justify-content:center;
+padding: 10px;
+flex-direction:row;
+font-size: 30px;
+
+}
+.photo{
+  display: flex;
+  padding: 10px;
+  border-radius: 50%;
+}
+
+.about-me {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.about-me-info{
+  max-width: 100%;
+}
+
+.data{
+  background-color:lightgray;
+  margin: 10px;
+  padding: 20px;
+}
+
+.red_box {
+  background-color: red;
+  padding: 20px;
+  margin: 10px;
+}
+
+footer {
+  font-size: large;
+  background-color:black;
+  color: white;
+  padding: 10px;
+  text-align: center;
+  font-style: italic;
+}
+
+button {
+  padding: 10px 20px;
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  cursor: pointer;
+  font-size: medium;
+}
+
+button:hover {
+  background-color: #3e8e41;
+}
+
+
+nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+nav ul li {
+  display: inline-block;
+  margin-right: 10px;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: white;
+}
+
+.contact-me {
+  text-align: center;
+  padding: 20px;
+  display: center;
+  color: white;
+  background-color: green;
+  margin: 10px;
+}
+
+.map-container {
+  position: relative;
+  text-align: center;
+  background-position: center;
+  overflow: hidden;
+}
+
+.maps{
+  border: 30px solid  #333;
+}
+
+
+.contact-info {
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  margin-left:25px;
+  padding: 10px;
+} 
+
+.info{
+margin: 20px;
+background-color: orangered;
+border: 10px;
+padding: 10px;
+font-size: medium;
+}
+
+a{
+text-decoration: none;
+color: white;
+}
+
+input,textarea{
+background-color: lightgray;
+}
+
+.form_1 {
+  margin-top: 5px;
+  text-align: center;
+}
+
+.form_1 input {
+  width: 300px;
+}
+
+.row1 {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+  .row2 {
+  flex-direction: row;
+  display: flex;
+  justify-content: center;
+}
+
+textarea {
+  width: 40%;
+}
+
+input, textarea {
+  padding: 10px;
+  margin: 5px;
+  border: 1px solid #ccc;
+}
+
+label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+
+button {
+  padding: 10px 20px;
+  color: white;
+  cursor: pointer;
+  border-radius: 10px;
+}
+
+button:hover {
+  background-color: #3e8e41;
+}
+
+.submit-button{
+  width: 65%;
+}
+
+.submit {
+  background-color: orangered;
+  color: white;
+  padding: 5px 10px;
+  border-style: none;
+}
+
+
+
+</style>
 <body>
-    <header>
-        <nav>
-            <a href="index.html">Home</a>
-            <a href="contact.html">Contact</a>
-        </nav>
-    </header>
-    <section>
-        <h2> Hello, My name is karthik </h2>
-        <div class="content">
-            <img src="myphotokarthik.jpeg" alt="My photo">
-            <div class="text-area">
-                <p class="kalnia-glaze-all">Highly motivated and detail-oriented professional with extensive expertise in code implementation and object-oriented programming. Known for a strong analytical mindset and adept at troubleshooting and resolving complex issues in software development. Skilled in developing and implementing innovative strategies that not only enhance operational efficiency but also significantly reduce costs. Proven ability to work collaboratively within diverse teams and to adapt quickly to new technologies and methodologies. <br>
-                <br>
-                Passionate about continuous learning and professional development, with a commitment to staying updated with the latest industry trends and best practices. Exceptional communicator with strong interpersonal skills, enabling effective collaboration with stakeholders at all levels. Dedicated to delivering high-quality results on time and exceeding expectations, while fostering a positive and productive work environment.
-                </p>
-            </div>
+  <header>
+    <nav>
+      <ul>
+        <li><a class="home" href="index.html">Home</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+<main>
+
+  <div class="heading">
+    <h1>Hello, I am karthik</h1>
+  </div>
+
+    <div class="about">
+        <div class="photo">
+          <img height="300px" width="300px" src="myphotokarthik.jpeg" alt="My Profile Picture">
         </div>
-        <div class="button-container">
-            <a href="karthikresume.pdf" class="download-button"><span>Download CV</span></a>
-            <a href="contact.html" class="contact-button"><span>Contact</span></a>
+    
+        <div class="about-me">
+          <div class="about-me-info">
+            <div class="data">Highly motivated and detail-oriented professional with extensive expertise in code implementation and object-oriented programming. Known for a strong analytical mindset and adept at troubleshooting and resolving complex issues in software development. Skilled in developing and implementing innovative strategies that not only enhance operational efficiency but also significantly reduce costs. Proven ability to work collaboratively within diverse teams and to adapt quickly to new technologies and methodologies. </div>
+          </div>
         </div>
-        
-    </section>
+   </div>
+   <div class="red_box"></div>
+<br>
+    <button><a href="tel:9600028921" call>Contact</button>
+    <button><a href="karthikresume.pdf" download> Download CV</a></button>
+
+</main>
+  
+<footer>
+    <p>All rights reserved @ 2024</p>
+</footer>
 </body>
 </html>
